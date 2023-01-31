@@ -9,7 +9,7 @@ class ProductManager {
     }
 
     getProductById(id) {
-        let producto = this.products.find((product) => product.id == id);
+        const producto = this.products.find((product) => product.id === id);
         if(producto) return producto; else return 'Producto no encontrado';
     }
 
@@ -25,7 +25,7 @@ class ProductManager {
                 stock: stock,
             }
 
-            const productExist = this.products.find((p) => p.code == product.code);
+            const productExist = this.products.find((p) => p.code === product.code);
 
             if(!productExist) {
                 this.id++;
