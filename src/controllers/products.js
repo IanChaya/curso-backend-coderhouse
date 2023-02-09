@@ -14,7 +14,7 @@ const getAllProducts = async (request, response) => {
 	}
 	try {
 		const handlerProducts = new ProductManager(
-			"../src/database/Productos.json"
+			"./src/database/Productos.json"
 		);
 		let productos = [];
 		if (allProducts) {
@@ -36,7 +36,7 @@ const getProdById = async (request, response) => {
 	} else {
 		try {
 			const handlerProducts = new ProductManager(
-				"../src/database/Productos.json"
+				"./src/database/Productos.json"
 			);
 			id = Math.floor(id);
 			const producto = await handlerProducts.getProductById(id);

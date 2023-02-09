@@ -1,0 +1,27 @@
+
+{
+  
+  "type": "module",
+  "name": "curso-backend-coderhouse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IanChaya/curso-backend-coderhouse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IanChaya/curso-backend-coderhouse/issues"
+  },
+  "homepage": "https://github.com/IanChaya/curso-backend-coderhouse#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
